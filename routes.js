@@ -13,13 +13,4 @@ router.get('/users', userController.getAllUsers);
 
 router.get('/users/:id', userController.getUserById);
 
-// Rotas de testes/aprendizado
-router.get("/", function (req, res) {
-	res.send("Seja bem-vindo.");
-});
-
-router.get("/rotadinamica/:nome/:cargo/:cor", function (req, res) {
-	res.send("Olá " + req.params.nome + "!<br>Seu cargo é: " + req.params.cargo + ", e sua cor favorita é: " + req.params.cor);
-});
-
 module.exports = router;
